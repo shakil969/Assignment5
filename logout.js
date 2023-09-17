@@ -9,22 +9,22 @@ addBtn.onclick = () => {
   const value1 = work.value;
   const value2 = time.value;
   const value3 = workHours.value;
-  if(value1!=="" && value2!=="" &&value3!==""){
+  if (value1 !== "" && value2 !== "" && value3 !== ""){
     const object = {
       newWork: value1,
       newTime: value2,
       newHours: value3,
     };
     students.push(object);
-    work.value="";
-    time.value="";
-    workHours.value="";
-    waring.innerText ="";
-  }else{
+    work.value = "";
+    time.value = "";
+    workHours.value = "";
+    waring.innerText = "";
+  } else {
     waring.innerText = "Please fillup Your Informetion ... ";
     waring.style.color = "red";
   }
-  
+
   list();
 };
 
@@ -33,10 +33,10 @@ const list = () => {
   sheet.innerHTML = "";
   for (const student of students) {
     const li = document.createElement("li");
-    li.innerText=`${student.newWork} = ${student.newTime} = ${student.newHours}`
+    li.innerHTML = `
+    <div class="card" style="border:2px solid gray; width:40%; display:flex;">
+    <h6 class="list"> ${student.newWork}  =  ${student.newTime}  =  ${student.newHours}</h6>
+    </div>`;
     sheet.appendChild(li);
   }
 };
-
-
-

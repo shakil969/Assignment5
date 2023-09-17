@@ -9,7 +9,7 @@ const otp = document.getElementById("otp");
 const justInfo = {
   eml: "shakil@.com",
   pass: "0000",
-  otpNum : 0,  
+  otpNum: 0,
 };
 loginBtn.onclick = () => {
   const eml = email.value;

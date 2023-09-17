@@ -1,8 +1,8 @@
 .all {
   display: flex;
   justify-content: center;
-  align-items: center; 
-} 
+  align-items: center;
+}
 .styleLogin {
   display: flex;
   flex-direction: column;
@@ -34,22 +34,26 @@
   background-color: rgb(17, 72, 128);
   color: white;
 }
-#otp{
-  background-color:gray;
+#otp {
+  background-color: gray;
   padding: 0px 15px;
   border-radius: 5px;
 }
-
-           /* next page  */
-
-.Logout{
+/* next page  */
+.Logout {
   background-color: rgb(17, 72, 128);
   color: white;
 }
-.form{
+.form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 50px;
+}
+.card {
+  padding: 3px;
+  margin-top: 5px;
+}
+.list {
  
 }
